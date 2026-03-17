@@ -3,91 +3,154 @@
 
 @import "minima";
 
-// Home hero section
+// ── Layout ────────────────────────────────────────────────
+.wrapper {
+  max-width: 680px;
+  padding: 0 1.5rem;
+}
+
+// ── Site header ───────────────────────────────────────────
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid rgba(128,128,128,0.2);
+  padding: 1rem 0;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+// ── Home hero ─────────────────────────────────────────────
 .home-hero {
-  padding: 2rem 0 2.5rem;
-  border-bottom: 1px solid var(--border-color, #444);
-  margin-bottom: 2rem;
+  padding: 3rem 0 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(128,128,128,0.2);
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 0.4rem;
-  }
-
-  .wave {
-    display: inline-block;
-    animation: wave 2s ease-in-out infinite;
-    transform-origin: 70% 70%;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
   }
 
   .tagline {
-    font-size: 1.15rem;
-    opacity: 0.75;
-    margin-bottom: 0.8rem;
-    font-style: italic;
+    font-size: 1.1rem;
+    opacity: 0.6;
+    margin-bottom: 1rem;
   }
 
   .bio {
     font-size: 1rem;
-    line-height: 1.7;
-    max-width: 600px;
-    margin-bottom: 1.2rem;
-    opacity: 0.9;
+    line-height: 1.75;
+    max-width: 560px;
+    margin-bottom: 1.5rem;
+    opacity: 0.85;
   }
 
   .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     flex-wrap: wrap;
 
     a {
-      display: inline-block;
-      padding: 0.35rem 0.9rem;
-      border: 1px solid currentColor;
-      border-radius: 4px;
-      font-size: 0.9rem;
+      font-size: 0.875rem;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(128,128,128,0.4);
+      border-radius: 20px;
       text-decoration: none;
-      opacity: 0.85;
-      transition: opacity 0.15s;
+      opacity: 0.8;
+      transition: opacity 0.15s, border-color 0.15s;
 
       &:hover {
         opacity: 1;
+        border-color: currentColor;
         text-decoration: none;
       }
     }
   }
 }
 
-@keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  25%       { transform: rotate(20deg); }
-  75%       { transform: rotate(-10deg); }
-}
-
-// Post list on homepage
+// ── Post list ─────────────────────────────────────────────
 .post-list {
-  .post-meta {
-    font-size: 0.85rem;
-    opacity: 0.6;
+  li {
+    margin-bottom: 1.75rem;
+    list-style: none;
+    padding: 0;
   }
 
   h3 {
-    margin-top: 0.2rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
+  }
+
+  .post-meta {
+    font-size: 0.8rem;
+    opacity: 0.5;
     margin-bottom: 0.3rem;
   }
+
+  .post-link {
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  .post-excerpt {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    line-height: 1.6;
+  }
 }
 
-// Improve code blocks
-pre, code {
-  border-radius: 4px;
+// ── Post page ─────────────────────────────────────────────
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(128,128,128,0.2);
 }
 
-// Post content
+.post-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
 .post-content {
   line-height: 1.8;
+  font-size: 1rem;
 
-  h2 {
-    margin-top: 2rem;
+  h2 { margin-top: 2.5rem; font-weight: 700; }
+  h3 { margin-top: 2rem; }
+
+  p { margin-bottom: 1.25rem; }
+
+  a { text-decoration: underline; }
+
+  hr {
+    border: none;
+    border-top: 1px solid rgba(128,128,128,0.2);
+    margin: 2.5rem 0;
   }
+}
+
+// ── Code ──────────────────────────────────────────────────
+pre, code {
+  border-radius: 5px;
+  font-size: 0.875em;
+}
+
+pre {
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+}
+
+// ── Footer ────────────────────────────────────────────────
+.site-footer {
+  border-top: 1px solid rgba(128,128,128,0.2);
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  opacity: 0.6;
 }
