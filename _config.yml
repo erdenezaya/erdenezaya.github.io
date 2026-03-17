@@ -1,0 +1,25 @@
+title: Zaya
+description: "Writing about AI, tech, and whatever's on my mind."
+url: "https://erdenezaya.github.io"
+baseurl: ""
+
+author:
+  name: Zaya
+
+theme: minima
+minima:
+  skin: dark
+  date_format: "%b %d, %Y"
+  social_links:
+    - { platform: github,    user_url: "https://github.com/erdenezaya" }
+    - { platform: twitter,   user_url: "https://twitter.com/erdenezaya" }
+    - { platform: linkedin,  user_url: "https://linkedin.com/in/erdenezaya" }
+
+header_pages:
+  - about.md
+
+show_excerpts: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

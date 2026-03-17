@@ -1,0 +1,93 @@
+---
+---
+
+@import "minima";
+
+// Home hero section
+.home-hero {
+  padding: 2rem 0 2.5rem;
+  border-bottom: 1px solid var(--border-color, #444);
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
+  .wave {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+    transform-origin: 70% 70%;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+    opacity: 0.75;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+  }
+
+  .bio {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    a {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      opacity: 0.85;
+      transition: opacity 0.15s;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25%       { transform: rotate(20deg); }
+  75%       { transform: rotate(-10deg); }
+}
+
+// Post list on homepage
+.post-list {
+  .post-meta {
+    font-size: 0.85rem;
+    opacity: 0.6;
+  }
+
+  h3 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+// Improve code blocks
+pre, code {
+  border-radius: 4px;
+}
+
+// Post content
+.post-content {
+  line-height: 1.8;
+
+  h2 {
+    margin-top: 2rem;
+  }
+}
