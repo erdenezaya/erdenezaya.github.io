@@ -1,10 +1,10 @@
-title: Home
+title: Zaya's Blog
 description: "Writing about AI, tech, and whatever's on my mind."
 url: "https://erdenezaya.github.io"
 baseurl: ""
 
 author:
-  name: Zaya
+  name: Home
 
 theme: minima
 minima:
