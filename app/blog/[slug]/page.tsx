@@ -3,7 +3,7 @@ import { getAllSlugs, getPost } from '@/lib/posts'
 import { notFound } from 'next/navigation'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -12,17 +12,19 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
-    const post = getPost(params.slug)
+    const { slug } = await params
+    const post = getPost(slug)
     return { title: post.title, description: post.description }
   } catch {
     return {}
   }
 }
 
-export default function PostPage({ params }: Props) {
+export default async function PostPage({ params }: Props) {
+  const { slug } = await params
   let post
   try {
-    post = getPost(params.slug)
+    post = getPost(slug)
   } catch {
     notFound()
   }
