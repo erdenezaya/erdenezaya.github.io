@@ -6,15 +6,25 @@ export default function HomePage() {
     <main className="home-page">
       <section className="home-hero">
         <HeroParallax />
-        <div className="hero-content">
+
+        {/* Writing — top of tree */}
+        <Link href="/blog" className="hero-anchor hero-anchor--top">
+          Writing
+        </Link>
+
+        {/* Name centered */}
+        <div className="hero-center">
           <h1 className="hero-name">Erdenezaya</h1>
           <p className="hero-sub">Software engineer. Building with AI.</p>
-          <div className="hero-links">
-            <Link href="/about" className="hero-link">About</Link>
-            <Link href="/blog" className="hero-link">Writing</Link>
-            <a href="https://github.com/erdenezaya" target="_blank" rel="noopener" className="hero-link">GitHub</a>
-          </div>
+          <a href="https://github.com/erdenezaya" target="_blank" rel="noopener" className="hero-link">
+            GitHub
+          </a>
         </div>
+
+        {/* About — bottom of tree */}
+        <Link href="/about" className="hero-anchor hero-anchor--bottom">
+          About
+        </Link>
       </section>
     </main>
   )

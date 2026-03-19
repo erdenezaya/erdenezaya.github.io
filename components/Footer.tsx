@@ -8,7 +8,7 @@ export default function Footer() {
       <span>© {new Date().getFullYear()} Erdenezaya</span>
       <span>
         <a href="https://github.com/erdenezaya" target="_blank" rel="noopener" style={{ marginRight: '1rem' }}>GitHub</a>
-        <a href="https://twitter.com/erdenezaya" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.linkedin.com/in/erdenezayabatnasan" target="_blank" rel="noopener">LinkedIn</a>
       </span>
     </footer>
   )
