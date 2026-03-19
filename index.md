@@ -1,39 +1,50 @@
 ---
-layout: home
+layout: page
 title: ""
 ---
 
-<div class="home-hero">
-  <h1>Erdenezaya</h1>
-  <p class="tagline">Building with AI. Writing about what I find.</p>
-  <p class="bio">
-    Software engineer based in Australia, focused on AI systems, LLMs, and agents.
-    I write about practical implementations, the rough edges no one warns you about,
-    and ideas at the edge of what's currently possible.
-  </p>
-  <div class="social-links">
-    <a href="https://github.com/erdenezaya" target="_blank" rel="noopener">github</a>
-    <a href="https://twitter.com/erdenezaya" target="_blank" rel="noopener">twitter</a>
-    <a href="https://linkedin.com/in/erdenezaya" target="_blank" rel="noopener">linkedin</a>
+<section class="home-hero">
+  <div class="hero-image-wrap">
+    <div class="hero-float">
+      <img class="hero-tree" src="/assets/images/hero.png" alt="Tree with cosmic roots" />
+    </div>
   </div>
-</div>
-
-<p class="section-label">projects</p>
-
-<div class="project-grid">
-  <a class="project-card" href="https://erdenezaya.github.io/ai-ml-knowledge-graph/" target="_blank" rel="noopener">
-    <div class="card-header">
-      <p class="card-title">AI / ML Knowledge Graph</p>
-      <span class="card-arrow">↗</span>
+  <div class="hero-text">
+    <h1>Erdenezaya</h1>
+    <p class="hero-sub">Software engineer. Building with AI.</p>
+    <div class="hero-links">
+      <a href="/about/">About</a>
+      <a href="https://github.com/erdenezaya" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <p class="card-desc">Interactive graph mapping concepts, tools, and relationships across the AI and ML landscape. Built to answer "how does X relate to Y?" faster than any search.</p>
-    <div class="card-tags">
-      <span>knowledge-graph</span>
-      <span>AI/ML</span>
-      <span>D3.js</span>
-      <span>visualisation</span>
-    </div>
-  </a>
-</div>
+  </div>
+</section>
 
-<p class="section-label">writing</p>
+<script>
+(function () {
+  const wrap = document.querySelector('.hero-tree');
+  if (!wrap) return;
+
+  let targetX = 0, targetY = 0;
+  let currentX = 0, currentY = 0;
+
+  document.addEventListener('mousemove', function (e) {
+    targetX = (e.clientX / window.innerWidth  - 0.5) * 22;
+    targetY = (e.clientY / window.innerHeight - 0.5) * 12;
+  });
+
+  // Smooth lerp loop
+  (function loop() {
+    currentX += (targetX - currentX) * 0.06;
+    currentY += (targetY - currentY) * 0.06;
+    wrap.style.transform = 'translate(' + currentX.toFixed(2) + 'px, ' + currentY.toFixed(2) + 'px)';
+    requestAnimationFrame(loop);
+  })();
+
+  // Touch parallax
+  document.addEventListener('touchmove', function (e) {
+    const t = e.touches[0];
+    targetX = (t.clientX / window.innerWidth  - 0.5) * 14;
+    targetY = (t.clientY / window.innerHeight - 0.5) * 8;
+  }, { passive: true });
+})();
+</script>

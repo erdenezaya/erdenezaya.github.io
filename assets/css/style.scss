@@ -98,61 +98,6 @@ hr {
   .nav-trigger:checked ~ .trigger { display: block; }
 }
 
-// ── Home Hero ─────────────────────────────────────────────
-.home-hero {
-  padding: 5.5rem 0 4rem;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 4rem;
-
-  h1 {
-    font-family: var(--serif);
-    font-size: 3rem;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-    margin: 0 0 1rem;
-    color: #f2f2f2;
-  }
-
-  .tagline {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text);
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-
-  .bio {
-    font-size: 0.975rem;
-    line-height: 1.85;
-    max-width: 520px;
-    color: var(--text-muted);
-    margin-bottom: 2.5rem;
-  }
-
-  .social-links {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-
-    a {
-      font-family: var(--mono);
-      font-size: 0.76rem;
-      padding: 0.3rem 0.9rem;
-      border: 1px solid var(--border-mid);
-      border-radius: 9999px;
-      color: var(--text-muted) !important;
-      transition: all 0.15s;
-
-      &:hover {
-        color: var(--accent) !important;
-        border-color: var(--accent);
-        background: var(--accent-dim);
-      }
-    }
-  }
-}
 
 // ── Section Labels ────────────────────────────────────────
 .section-label {
@@ -496,6 +441,119 @@ pre {
     text-decoration-color: rgba(94, 234, 212, 0.3);
     &:hover { text-decoration-color: var(--accent); }
   }
+}
+
+// ── Home page (light override) ────────────────────────────
+body:has(.home-hero) {
+  background-color: #f7f5f0 !important;
+
+  .site-header {
+    background: rgba(247, 245, 240, 0.88) !important;
+    border-bottom-color: rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .site-title {
+    color: #1a1a1a !important;
+    &::before { color: #2d7a6e; }
+    &:hover   { color: #2d7a6e !important; }
+  }
+
+  .site-nav .page-link {
+    color: #777 !important;
+    &:hover { color: #1a1a1a !important; }
+  }
+
+  .site-footer {
+    background: #edeae3 !important;
+    border-top-color: rgba(0, 0, 0, 0.07) !important;
+    .footer-col-wrapper, p, li { color: #aaa !important; }
+    a { color: #aaa !important; &:hover { color: #1a1a1a !important; } }
+  }
+}
+
+// ── Home hero ─────────────────────────────────────────────
+.home-hero {
+  min-height: calc(100vh - 58px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0 5rem;
+  gap: 0;
+}
+
+.hero-image-wrap {
+  margin-bottom: 2.75rem;
+}
+
+.hero-float {
+  animation: heroFloat 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero-tree {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.12))
+          drop-shadow(0 0 80px rgba(94, 200, 180, 0.10));
+  transition: transform 0.08s linear;
+  will-change: transform;
+}
+
+.hero-text {
+  h1 {
+    font-family: var(--serif);
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    color: #1a1a1a;
+    margin: 0 0 0.6rem;
+    animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: #888;
+    margin: 0 0 2rem;
+    animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
+  }
+}
+
+.hero-links {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.52s both;
+
+  a {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: #555 !important;
+    padding: 0.38rem 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 9999px;
+    transition: all 0.18s;
+
+    &:hover {
+      color: #1a1a1a !important;
+      border-color: rgba(0, 0, 0, 0.45);
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px);    }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0);    }
 }
 
 // ── Footer ────────────────────────────────────────────────
