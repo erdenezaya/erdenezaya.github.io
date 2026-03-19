@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 
-// Posts live in _posts/ with Jekyll-style YYYY-MM-DD-slug.md filenames
+// Posts live in _posts/ with YYYY-MM-DD-slug.md filenames
 const postsDir = path.join(process.cwd(), '_posts')
 
 export interface PostMeta {
