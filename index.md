@@ -4,31 +4,32 @@ title: ""
 ---
 
 <div class="home-hero">
-  <h1>Hey, I'm Zaya <span class="wave">👋</span></h1>
-  <p class="tagline">Writing about AI, tech, and whatever's on my mind.</p>
+  <span class="hero-label">AI · Software Engineering · Australia</span>
+  <h1>Erdenezaya</h1>
+  <p class="tagline">Building with AI. Writing about what I find.</p>
   <p class="bio">
-    I'm a technologist fascinated by the intersection of AI and everyday life.
-    I share thoughts on building with AI, software, and the occasional personal reflection.
-    Based in Australia.
+    Software engineer focused on AI systems, LLMs, and the tools we use to build with them.
+    I write about practical implementations, experiments, and ideas at the edge of what's possible.
   </p>
   <div class="social-links">
-    <a href="https://github.com/erdenezaya" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://twitter.com/erdenezaya" target="_blank" rel="noopener">Twitter / X</a>
-    <a href="https://linkedin.com/in/erdenezaya" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/erdenezaya" target="_blank" rel="noopener">github</a>
+    <a href="https://twitter.com/erdenezaya" target="_blank" rel="noopener">twitter</a>
+    <a href="https://linkedin.com/in/erdenezaya" target="_blank" rel="noopener">linkedin</a>
   </div>
 </div>
 
----
+<p class="section-label">projects</p>
 
-### Projects
-
-<div class="project-list">
-  <div class="project-card">
-    <h4><a href="https://erdenezaya.github.io/ai-ml-knowledge-graph/" target="_blank" rel="noopener">AI/ML Knowledge Graph</a></h4>
-    <p>An interactive knowledge graph visualising concepts, tools, and relationships across the AI/ML landscape.</p>
-  </div>
+<div class="project-grid">
+  <a class="project-card" href="https://erdenezaya.github.io/ai-ml-knowledge-graph/" target="_blank" rel="noopener">
+    <p class="card-title">AI / ML Knowledge Graph</p>
+    <p class="card-desc">Interactive graph visualising concepts, tools, and relationships across the AI and machine learning landscape.</p>
+    <div class="card-tags">
+      <span>knowledge-graph</span>
+      <span>AI/ML</span>
+      <span>visualisation</span>
+    </div>
+  </a>
 </div>
 
----
-
-### Recent Posts
+<p class="section-label">recent writing</p>
