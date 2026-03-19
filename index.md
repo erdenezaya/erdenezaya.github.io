@@ -20,4 +20,15 @@ title: ""
 
 ---
 
+### Projects
+
+<div class="project-list">
+  <div class="project-card">
+    <h4><a href="https://erdenezaya.github.io/ai-ml-knowledge-graph/" target="_blank" rel="noopener">AI/ML Knowledge Graph</a></h4>
+    <p>An interactive knowledge graph visualising concepts, tools, and relationships across the AI/ML landscape.</p>
+  </div>
+</div>
+
+---
+
 ### Recent Posts
