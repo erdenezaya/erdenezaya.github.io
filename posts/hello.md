@@ -1,0 +1,18 @@
+---
+title: "Hello World"
+date: 2026-03-05
+categories: [personal]
+description: "Every blog starts somewhere."
+---
+
+Every blog starts somewhere. This is mine.
+
+I've been meaning to set up a personal space to write for a while — a place to think out loud about AI, tech, and whatever else catches my attention. After too many false starts and broken automation scripts, here it is.
+
+**What to expect:**
+
+- Notes on AI tools I'm actually using
+- Thoughts on software and building things
+- The occasional personal reflection
+
+No pressure, no schedule. Just writing when I have something worth saying.
