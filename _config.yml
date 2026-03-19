@@ -3,8 +3,7 @@ description: "Writing about AI, tech, and whatever's on my mind."
 url: "https://erdenezaya.github.io"
 baseurl: ""
 
-author:
-  name: Home
+author: Erdenezaya
 
 theme: minima
 minima:
