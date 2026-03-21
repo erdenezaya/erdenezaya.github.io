@@ -15,7 +15,6 @@ export default function HomePage() {
         {/* Name centered */}
         <div className="hero-center">
           <h1 className="hero-name">Erdenezaya</h1>
-          <p className="hero-sub">Software engineer. Building with AI.</p>
           <a href="https://github.com/erdenezaya" target="_blank" rel="noopener" className="hero-link">
             GitHub
           </a>

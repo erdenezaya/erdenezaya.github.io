@@ -117,21 +117,36 @@ hr {
   will-change: transform;
 }
 
+/* Dark gradient overlay for text legibility */
+.hero-hero::after,
+.home-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,0,0,0.55) 0%, transparent 100%),
+    linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, transparent 25%, transparent 75%, rgba(0,0,0,0.45) 100%);
+  pointer-events: none;
+}
+
 /* Writing — top-center */
 .hero-anchor {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 3;
   font-family: var(--font-mono), monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
   text-decoration: none;
-  transition: color 0.2s;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.8);
+  transition: opacity 0.2s;
 }
-.hero-anchor:hover { color: #fff; }
+.hero-anchor:hover { opacity: 0.75; color: #fff; }
 
 .hero-anchor--top    { top: 2.5rem; }
 .hero-anchor--bottom { bottom: 2.5rem; }
@@ -140,7 +155,7 @@ hr {
 .hero-center {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,30 +166,33 @@ hr {
 
 .hero-name {
   font-family: var(--font-serif), Georgia, serif;
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 700;
   font-style: italic;
   color: #fff;
   margin: 0 0 0.5rem;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 24px rgba(0,0,0,0.7), 0 0 60px rgba(0,0,0,0.4);
   animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s both;
 }
 
 .hero-sub {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.65);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9);
   margin: 0 0 1.75rem;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  text-shadow: 0 1px 12px rgba(0,0,0,0.8);
   animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.38s both;
+  max-width: 480px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
 }
 
 .hero-link {
   pointer-events: all;
   font-family: var(--font-mono), monospace;
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.75);
+  color: #fff;
   padding: 0.38rem 1.1rem;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.7);
   border-radius: 9999px;
   transition: all 0.18s;
   animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.52s both;

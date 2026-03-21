@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How I Built the AI/ML Knowledge Graph"
-date: 2026-02-28
+date: 2026-03-18
 categories: [ai, projects]
 description: "A walkthrough of the design decisions behind my interactive AI/ML knowledge graph — the taxonomy problem, tech choices, and what I'd do differently."
 ---
