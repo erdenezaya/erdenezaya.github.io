@@ -2,9 +2,12 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+const DESIGN_PAGES = ['/', '/about', '/impact', '/competency']
+
 export default function Nav() {
   const pathname = usePathname()
-  if (pathname === '/') return null
+  const path = pathname === '/' ? '/' : pathname.replace(/\/$/, '')
+  if (DESIGN_PAGES.includes(path)) return null
 
   return (
     <header className="site-header">
