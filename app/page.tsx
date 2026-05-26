@@ -511,7 +511,7 @@ export default function HomePage() {
 
         <section className="hero">
 
-          <div className="eyebrow">Head of IT · AI Researcher · Bridge Leader</div>
+          <div className="eyebrow">Technology executive · AI Researcher · Bridge Leader</div>
 
           <h1 className="hero-name">
             <span className="given">Erdenezaya</span>
@@ -564,12 +564,6 @@ export default function HomePage() {
         </section>
 
         <div className="bottom-band">
-          <div className="roles">
-            <span className="role-chip accent">Head of IT &amp; Digital Transformation</span>
-            <span className="role-chip">Banking Automation &amp; AI Strategy</span>
-            <span className="role-chip">Solution Architect</span>
-          </div>
-
           <div className="page-links">
             <div className="page-links-label">Portfolio</div>
             <div className="page-link-row">
@@ -599,6 +593,13 @@ export default function HomePage() {
                 <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
               YouTube
+              <span className="arrow">→</span>
+            </a>
+            <a className="ext-link" href="https://substack.com/@erdenezaya" target="_blank" rel="noopener">
+              <svg className="ic" viewBox="0 0 24 24">
+                <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+              </svg>
+              Substack
               <span className="arrow">→</span>
             </a>
           </div>
