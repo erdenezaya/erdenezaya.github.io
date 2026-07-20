@@ -511,7 +511,7 @@ export default function HomePage() {
 
         <section className="hero">
 
-          <div className="eyebrow">Technology executive · AI Researcher · Bridge Leader</div>
+          <div className="eyebrow">Digital Transformation · Cloud Native Architecture · AI Researcher · Bridge Leader</div>
 
           <h1 className="hero-name">
             <span className="given">Erdenezaya</span>
@@ -533,26 +533,26 @@ export default function HomePage() {
 
             <div className="pillar p1">
               <div className="pillar-caption">
-                <span className="pillar-label">Executive Strategy</span>
-                <span className="pillar-sub" style={{ animationDelay: '1700ms' }}>board · budget · org</span>
+                <span className="pillar-label">Technology Leader</span>
+                <span className="pillar-sub" style={{ animationDelay: '1700ms' }}>Executive Strategy · Digital Transformation</span>
               </div>
             </div>
             <div className="pillar p2">
               <div className="pillar-caption">
                 <span className="pillar-label">AI Research</span>
-                <span className="pillar-sub" style={{ animationDelay: '1750ms' }}>UWA 2026 · applied ML</span>
+                <span className="pillar-sub" style={{ animationDelay: '1750ms' }}>MIT at UWA 2026 · Specialized in AI</span>
               </div>
             </div>
             <div className="pillar p3">
               <div className="pillar-caption">
                 <span className="pillar-label">AI Engineering</span>
-                <span className="pillar-sub" style={{ animationDelay: '1800ms' }}>MLOps · LLM systems</span>
+                <span className="pillar-sub" style={{ animationDelay: '1800ms' }}>MLOps · Agentic AI systems</span>
               </div>
             </div>
             <div className="pillar p4">
               <div className="pillar-caption">
                 <span className="pillar-label">Policy</span>
-                <span className="pillar-sub" style={{ animationDelay: '1850ms' }}>regulation · governance</span>
+                <span className="pillar-sub" style={{ animationDelay: '1850ms' }}>governance · regulation</span>
               </div>
             </div>
           </div>
