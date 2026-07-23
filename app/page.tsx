@@ -545,7 +545,7 @@ export default function HomePage() {
             </div>
             <div className="pillar p3">
               <div className="pillar-caption">
-                <span className="pillar-label">AI Engineering</span>
+                <span className="pillar-label">Forward-deployed Engineering</span>
                 <span className="pillar-sub" style={{ animationDelay: '1800ms' }}>MLOps · Agentic AI systems</span>
               </div>
             </div>
