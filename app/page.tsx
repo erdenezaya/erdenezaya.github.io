@@ -216,6 +216,7 @@ html, body {
   animation: rise 1000ms cubic-bezier(0.22, 1, 0.36, 1) 1400ms forwards;
 }
 .tagline .quote { color: var(--gold-dim); font-family: var(--serif); font-size: 1.3em; vertical-align: -2px; margin: 0 4px; }
+.tagline-text { display: block; transform: translateY(25px); }
 
 .bridge {
   position: relative;
@@ -482,6 +483,7 @@ html, body {
   .hero-title { font-size: 11px; gap: 10px; }
   .bridge { height: 220px; margin-top: 56px; }
   .pillar-sub { font-size: 12px; }
+  .tagline-text { transform: translateY(70px); }
   .bottom-band { grid-template-columns: 1fr; }
   .page-links { display: none; }
   .links { justify-content: flex-start; }
@@ -504,7 +506,7 @@ export default function HomePage() {
           <div className="tick">
             <span>Khan Bank JSC</span>
             <span>Mongolia</span>
-            <span>MS in AI · UWA 2026</span>
+            <span>Master of IT (AI) · UWA 2026</span>
           </div>
           <div className="live">Open to briefings</div>
         </div>
@@ -540,7 +542,7 @@ export default function HomePage() {
             <div className="pillar p2">
               <div className="pillar-caption">
                 <span className="pillar-label">AI Research</span>
-                <span className="pillar-sub" style={{ animationDelay: '1750ms' }}>MIT at UWA 2026 · Specialized in AI</span>
+                <span className="pillar-sub" style={{ animationDelay: '1750ms' }}>Master of IT (AI) · UWA 2026 · Specialized in AI</span>
               </div>
             </div>
             <div className="pillar p3">
@@ -558,7 +560,9 @@ export default function HomePage() {
           </div>
 
           <p className="tagline">
-            <span className="quote">&ldquo;</span>At the intersection of executive strategy, AI research, engineering, and policy.<span className="quote">&rdquo;</span>
+            <span className="tagline-text">
+              <span className="quote">&ldquo;</span>At the intersection of executive strategy, AI research, engineering, and policy.<span className="quote">&rdquo;</span>
+            </span>
           </p>
 
         </section>
